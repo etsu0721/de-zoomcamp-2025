@@ -28,8 +28,12 @@ def main(params):
             t_start = time()
             
             # Convert data type of datetime columns
-            df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
-            df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
+            try:
+                df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
+                df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
+            except AttributeError:
+                df.lpep_pickup_datetime = pd.to_datetime(df.lpep_pickup_datetime)
+                df.lpep_dropoff_datetime = pd.to_datetime(df.lpep_dropoff_datetime)
 
             # Insert into database
             df.to_sql(name=f'{table}', con=engine, if_exists='append')
