@@ -17,8 +17,7 @@ pip 24.3.1 from /usr/local/lib/python3.12/site-packages/pip (python 3.12)
 
 ## Question 3. Trip Segmentation Count
 
-See `Dockerfile` for image specifications.
-See `ingest-taxi-trips.py` for details of ingestion script.
+See `Dockerfile` for image specifications. See `ingest-taxi-trips.py` for details of ingestion script.
 
 Ingest October, 2019 Green Taxi Trip data into Postgres:
 ```bash
@@ -58,11 +57,11 @@ GROUP BY
     distance_range; 
 ```
 
-"0-1 miles"	    104,802
-"1-3 miles"	    198,924
-"3-7 miles"	    109,603
-"7-10 miles"	27,678
-"10+ miles"	    35,189
+- "0-1 miles"	    104,802
+- "1-3 miles"	    198,924
+- "3-7 miles"	    109,603
+- "7-10 miles"	    27,678
+- "10+ miles"	    35,189
 
 
 ## Question 4. Longest trip for each day
@@ -83,10 +82,10 @@ ORDER BY
     max_trip_distance DESC; 
 ```
 
-"2019-10-31"	515.89
-"2019-10-11"	95.78
-"2019-10-26"	91.56
-"2019-10-24"	90.75
+- "2019-10-31"	515.89
+- "2019-10-11"	95.78
+- "2019-10-26"	91.56
+- "2019-10-24"	90.75
 
 
 ## Question 5. Three biggest pickup zones
@@ -109,9 +108,9 @@ ORDER  BY total_amount_sum DESC
 LIMIT  3; 
 ```
 
-"East Harlem North"	    18686.680000000073
-"East Harlem South"	    16797.260000000068
-"Morningside Heights"	13029.790000000034
+- "East Harlem North"	    18686.680000000073
+- "East Harlem South"	    16797.260000000068
+- "Morningside Heights"	    13029.790000000034
 
 
 ## Question 6. Largest tip
@@ -136,9 +135,9 @@ ORDER BY
 LIMIT 3;
 ```
 
-"JFK Airport"	    87.3
-"Yorkville West"	80.88
-"East Harlem North"	40
+- "JFK Airport"	        87.3
+- "Yorkville West"	    80.88
+- "East Harlem North"	40
 
 ## Question 7. Terraform Workflow
 
