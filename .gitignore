@@ -1,3 +1,6 @@
 # Docker container volume mounts
 /module_1_setup/postgres_ny_taxi_data/
 /module_1_setup/pgadmin_conn_data/
+
+# Personal scripts
+/scr/
