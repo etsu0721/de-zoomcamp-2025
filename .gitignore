@@ -44,6 +44,12 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-# Ignore 
-*.json
+# Ignore keys
+/module_1_setup/infrastructure/keys/
 # Terraform end ignore block
+
+# Kestra key-value store setup for GCP
+/module_2_orchestration/flows/gcp_kv.yaml
+
+# Kestra keys
+/module_2_orchestration/keys/
