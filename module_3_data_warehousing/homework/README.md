@@ -146,4 +146,4 @@ FROM
   `dezc25_bq_dataset_qbmxo8y742f8pm.yellow_tripdata_2024`;
 ```
 
-BigQuery estimates the query will process 0 B. I think this is because such a query relies on table metadata (in this case, the number of rows) rather than needing to scan the full table.
+**Answer**: BigQuery estimates the query will process 0 B. I think this is because such a query relies on table metadata (in this case, the number of rows) rather than needing to scan the full table.
