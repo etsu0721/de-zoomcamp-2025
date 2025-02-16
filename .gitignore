@@ -50,3 +50,6 @@ terraform.rc
 
 # Ignore keys
 keys/
+
+# Ignore DuckDB files
+*.duckdb
