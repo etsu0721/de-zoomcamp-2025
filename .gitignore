@@ -53,3 +53,6 @@ keys/
 
 # Ignore DuckDB files
 *.duckdb
+
+# Ignore batch processing data
+/module_5_batch_processing/data/
